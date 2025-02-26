@@ -1,0 +1,116 @@
+.technology-background {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding: 10px;
+}
+.main-highlight-title {
+  color: var(--text-color-black-gray);
+  letter-spacing: 1px;
+}
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+.card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card p {
+  font-size: 14px;
+  text-align: center;
+  color: var(--text-color-black-gray);
+}
+
+.blue-text {
+  color: var(--text-color-black-gray);
+}
+
+.red-text {
+  color: var(--text-color-black-gray);
+}
+.mt-2 {
+  margin-top: 10px;
+}
+/* service card */
+.services-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+.services-card h1 {
+  margin-bottom: 10px;
+  text-align: center;
+  color: #555;
+  letter-spacing: 1px;
+}
+/* industries serve styles */
+.industries-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.industries-card {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  background-image: url("../../Assets/Banner3.jpeg");
+}
+
+.industries-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.industries-card h1 {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .industries-grid-container {
+    grid-template-columns: 1fr;
+  }
+}

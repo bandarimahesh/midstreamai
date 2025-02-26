@@ -1,0 +1,95 @@
+/* Swiper Slide Content */
+.swiper-slide-content {
+  position: relative;
+  height: 490px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+.swiper-slide-content {
+  clip-path: inset(0 0 0 0 round 15px);
+}
+.swiper-slide {
+  border-radius: 15px !important;
+  overflow: hidden; /* Ensures the border radius clips the content */
+}
+.swiper-slide-content:hover {
+  /* transform: scale(1.02); */
+  border-radius: 15px !important;
+}
+
+/* Dark Overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Slide Text */
+.slide-text {
+  position: relative;
+  z-index: 1;
+}
+
+/* Custom Navigation Buttons */
+.custom-button-prev,
+.custom-button-next {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+  z-index: 10;
+}
+
+.custom-button-prev:hover,
+.custom-button-next:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.custom-button-prev {
+  left: 24px;
+}
+
+.custom-button-next {
+  right: 24px;
+}
+
+/* Custom Pagination */
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.custom-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background: rgb(110, 107, 107) !important;
+  opacity: 0.6;
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+  background: var(--primary-color) !important; /* Custom active color */
+  transform: scale(1.3);
+}

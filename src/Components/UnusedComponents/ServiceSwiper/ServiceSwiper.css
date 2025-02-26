@@ -1,0 +1,160 @@
+/* Services Section Container */
+.services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 450px;
+  flex-direction: row;
+}
+.bg-white {
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.bg {
+  background-image: url("../../../Assets/blue-abstract.jpg");
+}
+/* Left Section - Text */
+.services-text {
+  width: 100%;
+  max-width: 50%;
+  /* position: relative; */
+  margin-left: 20px;
+}
+
+.services-text h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--text-color-black-gray);
+}
+
+.services-text p {
+  font-size: 1.1rem;
+  color: var(--text-color-black-gray);
+}
+
+/* Floating Shapes */
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.shape-1 {
+  width: 100px;
+  height: 100px;
+  background-color: #d97706;
+  top: -50px;
+  left: -50px;
+}
+
+.shape-2 {
+  width: 30px;
+  height: 30px;
+  background-color: #6d28d9;
+  top: 60px;
+  left: 10px;
+}
+
+.shape-3 {
+  width: 120px;
+  height: 120px;
+  background-color: #059669;
+  bottom: -60px;
+  left: 60px;
+}
+
+.shape-4 {
+  width: 40px;
+  height: 40px;
+  background-color: #9333ea;
+  bottom: 60px;
+  left: 130px;
+}
+
+.shape-5 {
+  width: 35px;
+  height: 35px;
+  background-color: #ec4899;
+  top: 30%;
+  left: 25%;
+}
+
+.shape-6 {
+  width: 25px;
+  height: 25px;
+  background-color: #2563eb;
+  bottom: 15%;
+  left: 20%;
+}
+
+.shape-7 {
+  width: 100px;
+  height: 100px;
+  background-color: #10b981;
+  top: -35px;
+  left: 37%;
+}
+
+/* Right Section - Swiper */
+.services-slider {
+  width: 100%;
+  max-width: 50%;
+  position: relative;
+  /* margin-top: 2rem; */
+}
+
+/* @media (min-width: 768px) {
+  .services-slider {
+    margin-top: 0;
+  }
+} */
+
+.swiper-container {
+  width: 100%;
+  height: 450px;
+  /* border-radius: 12px; */
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+/* Image Container */
+.swiper-image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Image */
+.swiper-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  /* border-radius: 12px; */
+}
+
+/* Overlay Title (Now visible on top) */
+.swiper-title-overlay {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(235, 225, 225, 0.5);
+  color: rgb(65, 61, 61);
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 6px 12px;
+  /* border-radius: 5px; */
+  text-align: center;
+  width: 100%;
+}

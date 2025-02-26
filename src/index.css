@@ -1,13 +1,276 @@
-body {
+*,
+*::before,
+*::after {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+body {
+  font-family: century-gothic, sans-serif;
+  touch-action: manipulation; /* Prevents unwanted double-tap zoom */
+  -webkit-text-size-adjust: 100%; /* Prevents font scaling in Safari */
+  background-color: #f0f2f5;
+}
+/* Define CSS variables */
+:root {
+  --primary-color: #66d67a;
+  --secondary-color: #6c757d;
+  --background-color: #f8f9fa;
+  --background-color-white: #fff;
+  --text-color: #212529;
+  --text-color-white: #fff;
+  --text-color-black: #111;
+  --text-color-black-gray: #3d3b3b;
+  /* --text-color-black-gray: #352e2e; */
+  --text-color-light-gray: #6b7280;
+  --background-color-gray: #f2f2f2;
+}
+/* Smooth scrolling for better UX */
+::selection {
+  background-color: var(--primary-color); /* Change to your desired color */
+  color: var(--text-color-white); /* Change text color if needed */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::-moz-selection {
+  background-color: var(--primary-color); /* Change to your desired color */
+  color: var(var(--text-color-white)); /* Change text color if needed */
+}
+/* Custom Scrollbar (For WebKit browsers like Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 0px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track background */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f2f2f2; /* Scrollbar color */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ccc; /* Darker on hover */
+}
+
+@keyframes hero-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hero-slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes hero-slideRight {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes hero-slideLeft {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.hero-animate-fadeIn {
+  animation: hero-fadeIn 0.6s ease-out forwards;
+}
+
+.hero-animate-slideUp {
+  animation: hero-slideUp 0.6s ease-out forwards;
+}
+
+.hero-animate-slideRight {
+  animation: hero-slideRight 0.6s ease-out forwards;
+}
+.hero-animate-slideLeft {
+  animation: hero-slideLeft 0.6s ease-out forwards;
+}
+.hero-delay-100 {
+  animation-delay: 100ms;
+}
+
+.hero-delay-200 {
+  animation-delay: 200ms;
+}
+
+.hero-delay-300 {
+  animation-delay: 300ms;
+}
+
+.react-tel-input .form-control {
+  height: auto !important;
+  width: 100% !important;
+}
+/* WebKit-based input styles */
+input,
+textarea {
+  -webkit-appearance: none; /* Remove default styles */
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  -webkit-box-shadow: 0 0 5px var(--primary-color);
+  box-shadow: 0 0 5px var(--primary-color);
+}
+
+/* WebKit-based button styles */
+button {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button,
+input,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+  border: none;
+  outline: none;
+}
+
+/* Default container styles */
+.container {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.align-items-end {
+  align-items: flex-end;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.jc-space-between {
+  justify-content: space-between !important;
+}
+.p16 {
+  padding: 16px;
+}
+.pt16 {
+  padding-top: 16px;
+}
+.pb16 {
+  padding-bottom: 16px;
+}
+.pl16 {
+  padding-left: 16px;
+}
+.pr16 {
+  padding-right: 16px;
+}
+.fs16 {
+  font-size: 16px;
+}
+.fs24 {
+  font-size: 24px;
+}
+.fs32 {
+  font-size: 32px;
+}
+.mt32 {
+  margin-top: 32px;
+}
+.mb32 {
+  margin-bottom: 32px;
+}
+.mtb60 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.mt16 {
+  margin-top: 16px;
+}
+.mb16 {
+  margin-bottom: 16px;
+}
+.mt48 {
+  margin-top: 48px;
+}
+.mt100 {
+  margin-top: 100px;
+}
+.m16 {
+  margin: 16px;
+}
+.margin-auto {
+  margin: 0 auto;
+}
+.gap30 {
+  gap: 30px;
+}
+.gap20 {
+  gap: 20px;
+}
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
 }

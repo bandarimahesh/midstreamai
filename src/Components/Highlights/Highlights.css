@@ -1,0 +1,97 @@
+.glass-container {
+  width: 100%;
+  height: 50vh;
+  background: linear-gradient(135deg, #96b1e3 0%, #2a5298 100%);
+  gap: 30px;
+  padding: 20px 40px;
+  border-radius: 25px;
+}
+
+.glass-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: auto;
+  background: #fff;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  /*color: rgb(247, 247, 247);  Change text color to black */
+  /* text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7); */
+  text-align: center;
+  padding: 10px;
+  z-index: 999;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  padding: 20px;
+  /* background-color: #f2f2f2; */
+}
+.glass-card:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
+  background-color: #fff;
+}
+.border-right {
+  border-right: 2px solid rgba(0, 0, 0, 0.5);
+}
+.highlight-title-box {
+  margin: 40px 0 20px 0;
+  text-align: center;
+}
+
+.main-highlight-title {
+  font-size: 48px;
+  font-weight: 600;
+  position: relative; /* Ensures the pseudo-element is positioned correctly */
+  display: inline-block; /* Keeps the underline limited to text width */
+}
+
+/* .main-highlight-title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: #111; 
+  left: 0;
+  bottom: -5px; 
+} */
+
+/* .glass-card.one {
+  rotate: 350deg;
+}
+.glass-card.four {
+  rotate: 345deg;
+}
+.glass-card.two,
+.glass-card.four {
+  margin-top: 100px;
+}
+.glass-card.three {
+  margin-top: -70px;
+} */
+.highlight-title {
+  /* color: var(--primary-color); */
+  /* font-size: 24px; */
+  margin-bottom: 16px;
+}
+.highlight-title {
+  color: var(--text-color-black-gray);
+}
+
+.highlight-sub-text {
+  color: var(--text-color-light-gray);
+  letter-spacing: 1px;
+}
+.highlight-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+/* .highlight-container {
+  left: 30px;
+} */

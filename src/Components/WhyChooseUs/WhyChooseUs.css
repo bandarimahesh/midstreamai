@@ -1,0 +1,84 @@
+.why-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-card {
+  background: white;
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); */
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.why-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1f2937;
+}
+
+.why-text {
+  color: #6b7280;
+  margin-top: 0.5rem;
+  font-size: 1.125rem;
+}
+
+.why-features {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.why-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #f9fafb;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.why-feature-item:hover {
+  transform: scale(1.05);
+}
+
+.why-icon {
+  color: var(--primary-color);
+  font-size: 28px;
+}
+
+.why-feature-text {
+  color: #374151;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.why-button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--primary-color);
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.why-button:hover {
+  background: #fff;
+  transform: scale(1.02);
+  transition: all 0.5s ease-in-out;
+  color: var(--primary-color);
+}
+.choose-us-title {
+  color: var(--text-color-black-gray);
+  font-size: 40px;
+}
