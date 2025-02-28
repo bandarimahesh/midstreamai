@@ -4,7 +4,7 @@ import Footer from "../Components/Footer/Footer";
 import ContactUs from "../Components/ContactUs/ContactUs";
 import GoToTop from "../Components/Utils/GoToTop";
 const ContactUsPage = () => {
-  document.title = "MidstreamAi | Contact us";
+  document.title = "MidstreamAI | Contact us";
 
   return (
     <>

@@ -5,7 +5,7 @@ import About from "../Components/About/About";
 import GoToTop from "../Components/Utils/GoToTop";
 
 const AboutPage = () => {
-  document.title = "MidstreamAi | About us";
+  document.title = "MidstreamAI | About us";
 
   return (
     <>

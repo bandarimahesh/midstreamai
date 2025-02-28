@@ -40,15 +40,25 @@ const Footer = () => {
                     </a>
                   </li>
                   <li className="footer-li ">
-                    <a className="nav-link" href="/blog">
-                      Blog
-                    </a>
-                  </li>
-                  <li className="footer-li ">
                     <a className="nav-link" href="/services">
                       Services
                     </a>
                   </li>
+                  <li className="footer-li ">
+                    <a className="nav-link" href="/services">
+                      Industries
+                    </a>
+                  </li>
+                  {/* <li className="footer-li ">
+                    <a className="nav-link" href="/blog">
+                      Blog
+                    </a>
+                  </li> */}
+                  {/* <li className="footer-li ">
+                    <a className="nav-link" href="/services">
+                      Services
+                    </a>
+                  </li> */}
                   <li className="footer-li ">
                     <a className="nav-link" href="/contact-us">
                       Contact Us
@@ -107,8 +117,9 @@ const Footer = () => {
                     <i className="fa-solid fa-location-dot footer-icon"></i>
                     <a href="/" className="footer-link location">
                       <span>
-                        MidstreamAI LLC, 5702 Oban Terrace Ln, Sugar Land, TX
-                        77479, USA
+                        MidstreamAI LLC, <br />
+                        Sugar Land, <br />
+                        TX 77479, USA
                       </span>
                     </a>
                   </li>

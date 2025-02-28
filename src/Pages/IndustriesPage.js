@@ -5,7 +5,7 @@ import Industries from "../Components/Industries/Industries";
 import GoToTop from "../Components/Utils/GoToTop";
 
 const IndustriesPage = () => {
-  document.title = "MidstreamAi | Industries";
+  document.title = "MidstreamAI | Industries";
 
   return (
     <>

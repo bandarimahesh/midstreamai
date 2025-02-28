@@ -7,7 +7,7 @@ import Services from "../Components/Services/Services";
 import GoToTop from "../Components/Utils/GoToTop";
 
 const ServicesPage = () => {
-  document.title = "MidstreamAi | Services";
+  document.title = "MidstreamAI | Services";
 
   return (
     <>

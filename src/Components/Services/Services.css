@@ -2,6 +2,7 @@
   font-weight: 800;
   color: #373f4c; /* Dark gray text */
   color: var(--text-color-black-gray);
+  font-size: 30px;
 }
 
 .services-banner {

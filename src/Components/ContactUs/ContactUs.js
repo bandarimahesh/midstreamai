@@ -10,14 +10,14 @@ const ContactUs = () => {
           <h1 className="main-highlight-title">
             Contact - <span className="banner-highlight-color"> Us </span>
           </h1>
-          <p className="service-banner-sub-text">
+          {/* <p className="service-banner-sub-text">
             Get in Touch – <span className="banner-highlight-color">We</span>'re
             Here to Help! 🚀, Your Questions, Our Answers! ✨
-          </p>
+          </p> */}
         </div>
         <RequestDemoForm />
       </div>
-      <LocateUs />
+      {/* <LocateUs /> */}
     </>
   );
 };

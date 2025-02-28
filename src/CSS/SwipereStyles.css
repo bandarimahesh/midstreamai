@@ -26,7 +26,9 @@
   /* transform: scale(1.02); */
   border-radius: 15px !important;
 }
-
+.swiper {
+  border-radius: 15px !important;
+}
 /* Dark Overlay */
 .overlay {
   position: absolute;
