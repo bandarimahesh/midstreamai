@@ -1,6 +1,7 @@
 import ServicesWithAccordion from "../Services/ServiceAccordion/ServicesWithAccordion";
 import Technology from "../Services/Technology";
 import IndustriesWithAccordion from "./Accordian/IndustriesWithAccordion";
+import IndustriesContent from "./IndustriesContent";
 import IndustriesSwiper from "./IndustriesSwiper";
 
 const Industries = () => {
@@ -15,6 +16,7 @@ const Industries = () => {
         </div>
         <IndustriesSwiper />
       </div>
+      <IndustriesContent />
       <IndustriesWithAccordion />
       {/* <Technology /> */}
     </>

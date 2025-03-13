@@ -11,8 +11,8 @@ const About = () => {
             About - <span className="banner-highlight-color"> Us</span>
           </h1>
           <p className="about-content-sub-text">
-            We are dedicated to providing innovative solutions that <br />
-            empower businesses and individuals.
+            We are dedicated to providing pipeline operations that <br />
+            empower businesses and users.
           </p>
         </div>
       </div>

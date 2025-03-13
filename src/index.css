@@ -165,7 +165,7 @@ textarea {
 /* Default container styles */
 .container {
   width: 90%;
-  max-width: 1300px;
+  /* max-width: 1300px; */
   margin: 0 auto;
   padding: 10px 20px;
 }
@@ -240,6 +240,9 @@ li {
 .mb32 {
   margin-bottom: 32px;
 }
+.mb48 {
+  margin-bottom: 48px;
+}
 .mtb60 {
   margin-top: 60px;
   margin-bottom: 60px;
@@ -273,4 +276,16 @@ li {
 }
 .position-absolute {
   position: absolute;
+}
+
+.react-tel-input .form-control {
+  height: 40px !important;
+}
+
+.w100 {
+  width: 100% !important;
+}
+
+.gap10 {
+  gap: 10px;
 }

@@ -15,7 +15,7 @@ const Navbar = () => {
     }
   };
   window.addEventListener("scroll", toggleVisible);
-
+  console.log(window.screen.width);
   return (
     <header>
       <nav className={visible ? " navbar active" : "navbar"}>

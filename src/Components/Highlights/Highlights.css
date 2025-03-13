@@ -1,18 +1,7 @@
-.glass-container {
-  width: 100%;
-  height: 50vh;
-  background: linear-gradient(135deg, #96b1e3 0%, #2a5298 100%);
-  gap: 30px;
-  padding: 20px 40px;
-  border-radius: 25px;
-}
-
 .glass-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 300px;
-  height: auto;
+  flex: 1;
+  /* width: 450px; */
+  height: 300px;
   background: #fff;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -32,7 +21,7 @@
   /* background-color: #f2f2f2; */
 }
 .glass-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.03) !important;
   transition: all 0.5s ease-in-out;
   background-color: #fff;
 }
@@ -51,32 +40,7 @@
   display: inline-block; /* Keeps the underline limited to text width */
 }
 
-/* .main-highlight-title::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 5px;
-  background-color: #111; 
-  left: 0;
-  bottom: -5px; 
-} */
-
-/* .glass-card.one {
-  rotate: 350deg;
-}
-.glass-card.four {
-  rotate: 345deg;
-}
-.glass-card.two,
-.glass-card.four {
-  margin-top: 100px;
-}
-.glass-card.three {
-  margin-top: -70px;
-} */
 .highlight-title {
-  /* color: var(--primary-color); */
-  /* font-size: 24px; */
   margin-bottom: 16px;
 }
 .highlight-title {
@@ -86,12 +50,10 @@
 .highlight-sub-text {
   color: var(--text-color-light-gray);
   letter-spacing: 1px;
+  font-weight: 400;
 }
 .highlight-icon {
   font-size: 48px;
   margin-bottom: 20px;
   color: var(--primary-color);
 }
-/* .highlight-container {
-  left: 30px;
-} */

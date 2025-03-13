@@ -15,9 +15,9 @@ const Home = () => {
                 <span className="banner-highlight-color"> Efficiency</span>
               </h1>
               <p className="banner-sub-text hero-animate-slideRight">
-                MidstreamAI leverages cutting-edge AI, advanced analytics, and
-                real-time monitoring to enhance pipeline safety, optimize
-                operations, and maximize efficiency.
+                MidstreamAI solutions use physics-based models, AI, advanced
+                analytics, and real-time monitoring to make pipelines smarter,
+                improve safety, and maximize efficiency.
               </p>
               <div className="banner-buttons-box">
                 <div className="flex align-center js-content-center grid-space">

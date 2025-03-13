@@ -10,26 +10,32 @@ export const HighlightCard1 = () => {
           </h1>
         </div>
         <div className="highlight-container mt48">
-          <div className="flex align-center justify-content-center gap30">
+          <div className="flex gap30">
             <div className="glass-card" data-aos="fade-right">
               <div className="glass-card-content">
                 <i className="fa-solid fa-clock highlight-icon"></i>
-                <h1 className="highlight-title">AI-Powered Leak Detection</h1>
+                <h1 className="highlight-title">
+                  Leak Detection & Real-Time Monitoring
+                </h1>
                 <p className="highlight-sub-text">
-                  Real-time leak detection with unparalleled accuracy
+                  Continuously tracks pipeline conditions to detect leaks,
+                  anomalies, and potential failures before they escalate.{" "}
                 </p>
               </div>
             </div>
             <div className="glass-card" data-aos="fade-up">
               <div className="glass-card-content">
                 <i className="fa-solid fa-lightbulb highlight-icon"></i>{" "}
-                <h1 className="highlight-title">Operational Optimization</h1>
+                <h1 className="highlight-title">
+                  Physics-Based & Hybrid Models
+                </h1>
                 <p className="highlight-sub-text">
-                  Reduce energy consumption and improve flow efficiency{" "}
+                  Combines physics-based models with AI to provide accurate
+                  flow, pressure, and operational state.
                 </p>
               </div>
             </div>{" "}
-            <div className="glass-card" data-aos="fade-up">
+            {/* <div className="glass-card" data-aos="fade-up">
               <div className="glass-card-content">
                 <i className="fa-solid fa-triangle-exclamation highlight-icon"></i>
                 <h1 className="highlight-title">Predictive Maintenance</h1>
@@ -37,13 +43,17 @@ export const HighlightCard1 = () => {
                   Prevent failures before they happen
                 </p>
               </div>
-            </div>{" "}
+            </div>{" "} */}
             <div className="glass-card" data-aos="fade-left">
               <div className="glass-card-content">
                 <i className="fa-solid fa-file-excel highlight-icon"></i>{" "}
-                <h1 className="highlight-title">Regulatory Compliance</h1>
+                <h1 className="highlight-title">
+                  Regulatory Compliance & Reporting
+                </h1>
                 <p className="highlight-sub-text">
-                  Automated reporting and adherence to global safety standards{" "}
+                  Ensures adherence to safety and environmental regulations,
+                  including leak detection requirements, with automated
+                  compliance tracking and reporting.{" "}
                 </p>
               </div>
             </div>

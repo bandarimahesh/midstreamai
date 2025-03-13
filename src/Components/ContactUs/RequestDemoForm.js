@@ -44,9 +44,9 @@ export default function RequestDemoForm() {
   return (
     <div>
       <div className="form-container">
-        <div className="form-image">
+        {/* <div className="form-image">
           <img src={ContactImage} alt="Contact" />
-        </div>
+        </div> */}
         <div className="form-content ">
           <form onSubmit={handleSubmit}>
             <div className="form-group">
@@ -69,27 +69,30 @@ export default function RequestDemoForm() {
                 required
               />
             </div>
-            <div className="form-group">
-              <label>Email</label>
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
+            <div className="flex align-center gap10">
+              <div className="form-group w100">
+                <label>Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <div className="form-group w100">
+                <label>Mobile Number</label>
+                <PhoneInput
+                  country={"us"}
+                  value={formData.mobile}
+                  onChange={handlePhoneChange}
+                  inputClass="phone-input"
+                  containerClass="phone-container"
+                  required
+                />
+              </div>
             </div>
-            <div className="form-group">
-              <label>Mobile Number</label>
-              <PhoneInput
-                country={"us"}
-                value={formData.mobile}
-                onChange={handlePhoneChange}
-                inputClass="phone-input"
-                containerClass="phone-container"
-                required
-              />
-            </div>
+
             <div className="form-group">
               <label>Message</label>
               <textarea

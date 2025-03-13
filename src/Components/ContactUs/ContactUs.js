@@ -1,13 +1,13 @@
 import React from "react";
 import RequestDemoForm from "./RequestDemoForm";
 import "./ContactUs.css";
-import LocateUs from "./LocateUs";
+// import LocateUs from "./LocateUs";
 const ContactUs = () => {
   return (
     <>
-      <div className="container mt48 position-relative">
+      <div className="container mt48 position-relative mb48">
         <div className="contact-title-box position-relative">
-          <h1 className="main-highlight-title">
+          <h1 className="contact-us-title">
             Contact - <span className="banner-highlight-color"> Us </span>
           </h1>
           {/* <p className="service-banner-sub-text">
